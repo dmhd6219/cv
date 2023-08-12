@@ -72,7 +72,7 @@
 
 
 % skills
-\newcommand{\skills}[2]{
+\newcommand{\skill}[2]{
 	% set specific indentation for personal information
 	\noindent\hangindent=2em\hangafter=0
 	% create a box to align two pieces of text
@@ -103,7 +103,7 @@
 	% new paragraph with the school in italics
 	\noindent \textit{#3} \par
 	% description with no hanging and in smaller text
-	
+	\vspace*{0.5em}
 	\noindent\hangindent=2em\hangafter=0 \small #4 
 	%back to normal size
 	\normalsize \par}
@@ -146,6 +146,7 @@
 	\section*{Education}
 	
 	\education{Graduated entering the top of students}{2019--2021}{Yandex Lyceum}{
+		Certificates confirming my knowledge :
 		\begin{itemize}
 			\item \href{https://raw.githubusercontent.com/dmhd6219/cv/main/files/YandexLyceumSert1.pdf}{Sertificate for 1st year}
 			\item \href{https://raw.githubusercontent.com/dmhd6219/cv/main/files/YandexLyceumSert2.pdf}{Sertificate for 2nd year}
@@ -153,6 +154,23 @@
 		
 	}
 	
-	\education{Bachelor's Degree in Computer Science}{2022--2026}{Innopolis University}{}
+	\education{Bachelor's Degree in Computer Science}{2022--2026}{Innopolis University}{
+		Useful courses I passed in University : 
+		\begin{itemize}
+			\item Data Structures and Algorithms (A grade)
+			\item Software System Analysis and Design (A grade)
+			\item FrontEnd Web Development (A grade)
+			\item UX/UI Design (A grade)
+		\end{itemize}
+	}
+	
+	% skills
+	\section*{Skills}
+	\skill{Programming Languages}{Python, JS, TS, Java, C, C++}
+	\skill{FrontEnd Development}{React, NextJs, Svelte, SvelteKit, TailwindCSS}
+	\skill{BackEnd Development}{Flask, FastAPI}
+	\skill{Other Frameworks}{PyQt5, PyGame, BS4, Selenium, Forge }
+	\skill{Other Skills}{LaTeX, Markdown, Git}
+	
 	
 \end{document}
