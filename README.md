@@ -37,17 +37,34 @@ git clone https://github.com/dmhd6219/cv.git
 
 ## Building the CV
 
-1. Edit the `main.tex` file using a text editor of your choice.
+### For English Version:
+1. Edit the `eng.tex` file using a text editor of your choice.
 2. Customize the content in each section to match your personal information, education, experience, etc.
 3. Save your changes.
 
 In your terminal, navigate to the repository directory and run the following commands to compile the CV:
 
 ```bash
-pdflatex main.tex
+pdflatex eng.tex
 ```
 
-This will generate a `main.pdf` file in the same directory.
+This will generate a `eng.pdf` file in the same directory.
+
+### For Russian Version:
+1. Edit the `rus.tex` file using a text editor of your choice.
+2. Customize the content in each section to match your personal information, education, experience, etc.
+3. At `layout.tex` uncomment `5`, `8`, `10`, `11` lines.
+4. At `macros.tex` uncomment `37` line.
+5. At `macros.tex` comment `38` line.
+6. Save your changes.
+
+In your terminal, navigate to the repository directory and run the following commands to compile the CV:
+
+```bash
+pdflatex rus.tex
+```
+
+This will generate a `rus.pdf` file in the same directory.
 
 ## Customization
 
