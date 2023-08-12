@@ -1,0 +1,28 @@
+%% PAGE LAYOUT %%
+
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel} % multilingual support
+\usepackage[utf8]{inputenc} % encoding
+
+\usepackage{tgpagella} % font
+
+% set the page layout
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=20mm,
+	%right=
+	%bottom=
+	top=15mm}
+
+% clean page
+\pagestyle{empty}
+
+% custom sectioning
+\usepackage{sectsty}
+\sectionfont{                      
+	\large % make sections smaller
+	\fontfamily{qag}\selectfont % change font family
+	\sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
+}
