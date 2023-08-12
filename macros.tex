@@ -34,7 +34,9 @@
 	\noindent\hangindent=2em\hangafter=0
 	% create a box to align two pieces of text
 	\parbox{3\spacebox}{% three times larger box
-		\textsc{#1}} % small caps entry name
+		% #1 % uncomment for russian support
+		\textsc{#1} % small caps entry name, comment for russian support
+	}
 	#2 \par} % entry value
 
 % language level
@@ -45,7 +47,7 @@
 	% create a box to align two pieces of text
 	\parbox{\spacebox}{%
 		\textbf{#1}} % bold font entry name
-	\space\space\space\space #2 \par}    % entry value
+	\space\space\space\space\space\space\space\space\space\space #2 \par}    % entry value
 
 
 % education
