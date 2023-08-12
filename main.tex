@@ -27,6 +27,7 @@
 	\sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
 }
 
+
 % colored hyperlinks
 \usepackage{hyperref}
 \hypersetup{
@@ -39,6 +40,7 @@
 }
 
 \urlstyle{same}
+
 
 %% MACROS %%
 
@@ -58,14 +60,6 @@
 	% back to normal size and font
 	\normalsize\normalfont}
 
-% slogan
-\newcommand{slogan}[1]{
-	\large % font size
-	\fontfamily{phv}\selectfont % font family
-	% print motto centered and slanted
-	\begin{center} \textsl{#1}\end{center}\par
-	% back to normal size and font
-	\normalsize \normalfont}
 
 % personal information
 \newcommand{\info}[2]{
@@ -109,7 +103,7 @@
 	% new paragraph with the school in italics
 	\noindent \textit{#3} \par
 	% description with no hanging and in smaller text
-	\vspace*{0.5em}
+	
 	\noindent\hangindent=2em\hangafter=0 \small #4 
 	%back to normal size
 	\normalsize \par}
@@ -131,45 +125,34 @@
 	\noindent\hangindent=2em\hangafter=0 \small #4 
 	%back to normal size
 	\normalsize \par}
-	
-%% CV %%
+
 %% CV %%
 \begin{document}
 	
 	% name and motto
-	\name{John Doe}
+	\name{Sviatoslav Sviatkin}
 	\vspace*{-10pt}
 	
 	% personal information
 	\sepspace
-	\info{Email}{\texttt{john.doe@edomain.com}}
-	\info{Phone}{+31 415 926 535}
-	\info{Address}{Fake Road 123, City 23456, Country}
-	
-	% work experience
-	\section*{Work Experience}
-	
-	\work{Lecturer}{2015--2020}{The XXX University}
-	
-	\sepspace
-	
-	\work{Data Analyist}{2010--2015}{An important tech
-		company}{This is a detailed description of the this
-		work:
-		
-		\begin{itemize}
-			\item One thing I did.
-			\item Another thing I did.
-			\item I didn't do much more, sorry.
-	\end{itemize}}
+	\info{Github}{\href{https://github.com/dmhd6219}{dmhd6219}}
+	\info{Website}{\href{https://dmhd6219.netlify.app/}{dmhd6219.netlify.app}}
+	\info{Telegram}{\href{https://t.me/slavasvyatkin}{@slavasvyatkin}}
+	\info{Email}{\href{mailto:s.sviatkin@innopolis.university}{s.sviatkin@innopolis.university}}
+	\info{Phone}{+79206706248}
+	\info{Address}{Innopolis, Russia}
 	
 	% education
 	\section*{Education}
 	
-	\education{Master's Degree in Data Analysis}{2009--2010}{My
-		Second University}{}
+	\education{Alumnus ranked in the top graduates}{2019--2021}{Yandex Lyceum}{
+		\begin{itemize}
+			\item \href{https://raw.githubusercontent.com/dmhd6219/cv/main/files/YandexLyceumSert1.pdf}{Sertificate for 1st year}
+			\item \href{https://raw.githubusercontent.com/dmhd6219/cv/main/files/YandexLyceumSert2.pdf}{Sertificate for 2nd year}
+		\end{itemize}
+		
+	}
 	
-	\education{Bachelor's Degree in CS}{2005--2009}{My First
-		University}{}
+	\education{Bachelor's Degree in Computer Science}{2022--2026}{Innopolis University}{}
 	
 \end{document}
